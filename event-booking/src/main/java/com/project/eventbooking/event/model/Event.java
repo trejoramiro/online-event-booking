@@ -4,7 +4,9 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 public class Event {
     private String eventName;
-    private String date;
+    private String description;
+    private LocalDateTime startDateTime;
+    private LocalDatetime endDateTime;
     private Location location;
-    private List<BigDecimal> ticketPrices;
+    private List<Ticket> tickets;
 }
